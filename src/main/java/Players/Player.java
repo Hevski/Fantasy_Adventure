@@ -7,11 +7,13 @@ public abstract class Player {
     private String name;
     private int healthScore;
     private WeaponType weapon;
+    private int purse;
 
     public Player(String name, WeaponType weapon) {
         this.name = name;
         this.healthScore = 100;
         this.weapon = weapon;
+        this.purse = 0;
     }
 
     public String getName() {
@@ -36,5 +38,13 @@ public abstract class Player {
 
     public void setWeapon(WeaponType weapon) {
         this.weapon = weapon;
+    }
+
+    public int getPurse() {
+        return purse;
+    }
+
+    public void setPurse(int purse) {
+        this.purse = purse;
     }
 }

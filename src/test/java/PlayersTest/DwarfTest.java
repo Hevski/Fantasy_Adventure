@@ -60,4 +60,9 @@ public class DwarfTest {
         dwarf.changeWeapon(WeaponType.DRAGON);
         assertEquals(WeaponType.DRAGON, dwarf.getWeapon());
     }
+
+    @Test
+    public void testPlayerStartsWithNoTreasure(){
+        assertEquals(0, dwarf.getPurse());
+    }
 }
