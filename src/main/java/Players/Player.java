@@ -8,9 +8,9 @@ public abstract class Player {
     private int healthScore;
     private WeaponType weapon;
 
-    public Player(String name, int healthScore, WeaponType weapon) {
+    public Player(String name, WeaponType weapon) {
         this.name = name;
-        this.healthScore = healthScore;
+        this.healthScore = 100;
         this.weapon = weapon;
     }
 
