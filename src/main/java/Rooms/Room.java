@@ -29,4 +29,8 @@ public abstract class Room {
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
     }
+
+    public int countPlayers(){
+        return players.size();
+    }
 }

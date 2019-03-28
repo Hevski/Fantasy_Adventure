@@ -53,4 +53,9 @@ public class WizzardTest {
         wizzard.fight(cleric);
         assertEquals(120, wizzard.getHealthScore());
     }
+
+    @Test
+    public void testPlayerStartsWithNoTreasure(){
+        assertEquals(0, wizzard.getPurse());
+    }
 }

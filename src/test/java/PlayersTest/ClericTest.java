@@ -53,4 +53,9 @@ public class ClericTest {
         cleric.fight(cleric2);
         assertEquals(105, cleric.getHealthScore());
     }
+
+    @Test
+    public void testPlayerStartsWithNoTreasure(){
+        assertEquals(0, cleric.getPurse());
+    }
 }
