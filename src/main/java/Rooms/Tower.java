@@ -2,13 +2,11 @@ package Rooms;
 
 import Players.Player;
 
-import java.util.ArrayList;
-
-public class Dungeon extends Room {
+public class Tower extends Room {
 
     private int treasure;
 
-    public Dungeon(String name, int treasure) {
+    public Tower(String name, int treasure) {
         super(name);
         this.treasure = treasure;
     }
@@ -25,10 +23,4 @@ public class Dungeon extends Room {
         player.setPurse(this.treasure);
         this.treasure = 0;
     }
-
-    //array list of players
-    //array list of baddies
-    //
-
-
 }

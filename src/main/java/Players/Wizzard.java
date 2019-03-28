@@ -14,4 +14,8 @@ public class Wizzard extends Player implements IFight {
         totalScore += player.getWeapon().getScore();
         setHealthScore(totalScore);
     }
+
+    public void changeWeapon(WeaponType weapon) {
+        setWeapon(weapon);
+    }
 }
